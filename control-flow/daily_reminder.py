@@ -1,8 +1,8 @@
-task = str(input("Enter your task description: "))
+task = str(input("Enter your task: "))
 
-priority = str(input("Enter a priority level (medium/high/low) "))
+priority = str(input("Priority (high/medium/low): "))
 
-time_bound = str(input("Is it time bound  Yes/no "))
+time_bound = str(input("Is it time-bound? (yes/no): "))
 
 
 match priority:
