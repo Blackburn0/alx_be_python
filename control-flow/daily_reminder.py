@@ -1,0 +1,25 @@
+task = str(input("Enter your task description: "))
+
+priority = str(input("Enter a priority level (medium/high/low) "))
+
+time_bound = str(input("Is it time bound  Yes/no "))
+
+
+match priority:
+    case "medium":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+        else:
+            print(f"Note: '{task}' is a {priority} priority task.  Consider completing soon.")
+    case "high":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+        else:
+            print(f"Note: '{task}' is a {priority} priority task. Complete it now.")
+    case "low":
+        if time_bound == "yes":
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+        else:
+            print(f"Note: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
+    case _:
+        print("An error occured")
